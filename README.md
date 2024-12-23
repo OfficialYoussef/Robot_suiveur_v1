@@ -114,7 +114,8 @@ void setMotorDirection(int pin1, int pin2, int speed) {
     digitalWrite(pin1, LOW);
     digitalWrite(pin2, LOW);
   }
-}```
+}`
+`````
 - Batterie (LiPo ou pack de piles)
 - Châssis de robot
 - Câbles de connexion<br>
