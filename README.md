@@ -28,6 +28,7 @@
 - 2 capteurs IR (pour détecter la ligne noire)
 - 2 moteurs DC avec roues
 - Module L298N (ou un autre driver moteur)#define IR_SENSOR_RIGHT 11 // Pin for the right IR sensor
+```
 #define IR_SENSOR_LEFT 12 // Pin for the left IR sensor
 #define MOTOR_SPEED 195 // Motor speed value
 
@@ -75,8 +76,10 @@ void loop() {
     // If neither sensor detects the line, stop the motors
     rotateMotor(0, 0);
   }
-}
-
+}```
+```
+# function rotatemotor
+```
 void rotateMotor(int rightSpeed, int leftSpeed) {
   // Set the direction and speed of the motors
   setMotorDirection(RIGHT_MOTOR_PIN1, RIGHT_MOTOR_PIN2, rightSpeed);
@@ -84,7 +87,8 @@ void rotateMotor(int rightSpeed, int leftSpeed) {
   analogWrite(ENABLE_RIGHT_MOTOR, abs(rightSpeed));
   analogWrite(ENABLE_LEFT_MOTOR, abs(leftSpeed));
 }
-
+```
+```
 void setupMotorPins() {
   // Configure the motor pins as output
   pinMode(ENABLE_RIGHT_MOTOR, OUTPUT);
@@ -110,7 +114,7 @@ void setMotorDirection(int pin1, int pin2, int speed) {
     digitalWrite(pin1, LOW);
     digitalWrite(pin2, LOW);
   }
-}
+}```
 - Batterie (LiPo ou pack de piles)
 - Châssis de robot
 - Câbles de connexion<br>
