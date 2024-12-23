@@ -20,7 +20,7 @@
 
 ### PWM Frequency:
 - `TCCR0B` modifies the frequency for smoother motor control.
-
-[schema on pdff](https://github.com/user-attachments/files/18228821/Add.a.heading.pdf)
+![WhatsApp Image 2024-12-23 at 10 33 14](https://github.com/user-attachments/assets/1b362cd3-f3af-46b0-8f1a-db578bfda319)
+[schema on pdf](https://github.com/user-attachments/files/18228821/Add.a.heading.pdf)
 
 my team work,[@imane-el-amrani](https://github.com/imane-el-amrani) .
